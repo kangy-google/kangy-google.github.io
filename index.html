@@ -1,1 +1,14 @@
-Hello World
+<html>
+  <body>
+    <script>
+      document.cookie="thirdparty=yes";
+      if (!/thirdparty=yes/.test(document.cookie)) {
+        parent.postMessage({
+          event: '3pcookiedisabled',
+          source: 'gstatic',
+          path: 'third_party_cookies_check.html'
+        }, '*');
+      }
+    </script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
       document.cookie="thirdparty=yes";
       if (!/thirdparty=yes/.test(document.cookie)) {
         parent.postMessage({
-          event: '3pcookiedisabled',
+          event: '3pcookiesdisabled',
           source: 'gstatic',
           path: 'third_party_cookies_check.html'
         }, '*');
